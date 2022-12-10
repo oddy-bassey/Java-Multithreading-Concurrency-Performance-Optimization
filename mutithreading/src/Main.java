@@ -1,19 +1,15 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        Thread thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                throw new RuntimeException("I will break down this thread completely!");
-            }
-        });
+        Thread thread = new MyThread();
         thread.setName("Revolt-GPG");
-        thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
-            @Override
-            public void uncaughtException(Thread t, Throwable e) {
-                System.out.println("A critical error happened in thread "+t.getName()+". The error is: "+e.getLocalizedMessage());
-            }
-        });
         thread.start();
+    }
+
+    public static class MyThread extends Thread{
+        @Override
+        public void run() {
+            System.out.println("The current thread running is "+this.getName());
+        }
     }
 }
