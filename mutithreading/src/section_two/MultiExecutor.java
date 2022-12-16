@@ -1,19 +1,21 @@
+package section_two;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MultiExecutor {
 
     /*
-     * Thread Creation - MultiExecutor (CORRECT SOLUTION)
-     * In this exercise we are going to implement a  MultiExecutor .
+     * Thread Creation - section_two.MultiExecutor (CORRECT SOLUTION)
+     * In this exercise we are going to implement a  section_two.MultiExecutor .
      *
-     * The client of this class will create a list of Runnable tasks and provide that list into MultiExecutor's constructor.
+     * The client of this class will create a list of Runnable tasks and provide that list into section_two.MultiExecutor's constructor.
      *
-     * When the client runs the  executeAll(),  the MultiExecutor,  will execute all the given tasks.
+     * When the client runs the  executeAll(),  the section_two.MultiExecutor,  will execute all the given tasks.
      *
-     * To take full advantage of our multicore CPU, we would like the MultiExecutor to execute all the tasks in parallel, by passing each task to a different thread.
+     * To take full advantage of our multicore CPU, we would like the section_two.MultiExecutor to execute all the tasks in parallel, by passing each task to a different thread.
      *
-     * Please implement the MultiExecutor below
+     * Please implement the section_two.MultiExecutor below
      */
 
     // Add any necessary member variables here
