@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -25,7 +32,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -53,7 +61,9 @@
       <workItem from="1670624835703" duration="533000" />
       <workItem from="1670625518691" duration="1174000" />
       <workItem from="1670650915786" duration="956000" />
-      <workItem from="1670652343313" duration="3814000" />
+      <workItem from="1670652343313" duration="4261000" />
+      <workItem from="1670837855127" duration="10000" />
+      <workItem from="1671159735094" duration="1504000" />
     </task>
     <servers />
   </component>
