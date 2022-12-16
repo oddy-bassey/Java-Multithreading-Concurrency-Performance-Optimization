@@ -4,7 +4,7 @@ import java.util.List;
 public class MultiExecutor {
 
     /*
-     * Thread Creation - MultiExecutor
+     * Thread Creation - MultiExecutor (CORRECT SOLUTION)
      * In this exercise we are going to implement a  MultiExecutor .
      *
      * The client of this class will create a list of Runnable tasks and provide that list into MultiExecutor's constructor.
@@ -24,9 +24,7 @@ public class MultiExecutor {
      */
     public MultiExecutor(List<Runnable> tasks) {
         // Complete your code here
-        for (Runnable task : tasks)  {
-            new Thread(task).start();
-        }
+        this.tasks = new ArrayList<>();
     }
 
     /**
@@ -34,18 +32,16 @@ public class MultiExecutor {
      */
     public void executeAll() {
         // complete your code here
-        tasks = new ArrayList<>();
-        for (int i = 5; i<6; i++){
-            int value = i;
-            Runnable task = new Runnable() {
-                @Override
-                public void run() {
-                    System.out.println("Executing some work: "+ value);
-                }
-            };
-            tasks.add(task);
+       List<Thread> threads = new ArrayList<>(tasks.size());
+
+
+        for (Runnable task : tasks) {
+            Thread thread = new Thread(task);
+            threads.add(thread);
         }
 
-        new MultiExecutor(tasks);
+        for (Thread thread : threads) {
+            thread.start();
+        }
     }
 }
