@@ -10,7 +10,9 @@ public class ExampleTwo {
      */
     public static void main(String[] args) {
         Thread thread = new Thread(new LongComputation(BigInteger.valueOf(2), BigInteger.TEN));
+        thread.setDaemon(true);
         thread.start();
+
         thread.interrupt();
     }
 
