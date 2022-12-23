@@ -1,4 +1,4 @@
-package section_3;
+package section_3_thread_coordination.thread_interrupt;
 
 import java.math.BigInteger;
 

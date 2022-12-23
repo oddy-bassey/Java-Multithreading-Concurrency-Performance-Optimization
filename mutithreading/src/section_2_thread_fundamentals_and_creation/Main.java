@@ -1,4 +1,4 @@
-package section_2;
+package section_2_thread_fundamentals_and_creation;
 
 import java.util.ArrayList;
 import java.util.List;
