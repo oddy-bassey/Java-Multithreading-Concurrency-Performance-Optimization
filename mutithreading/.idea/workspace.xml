@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5e96e7-75cd-44f0-8208-b47cf8e68122" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,24 +35,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.section_three.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_two.Main" />
-      <module name="mutithreading" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="section_three.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_three.Main" />
+  <component name="RunManager" selected="Application.ExampleTwo">
+    <configuration name="ExampleOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_3.ExampleOne" />
       <module name="mutithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="section_three.*" />
+          <option name="PATTERN" value="section_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,9 +58,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_3.ExampleTwo" />
+      <module name="mutithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="section_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_2.Main" />
+      <module name="mutithreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.section_three.Main" />
+        <item itemvalue="Application.ExampleTwo" />
+        <item itemvalue="Application.ExampleOne" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -77,7 +99,14 @@
       <workItem from="1670650915786" duration="956000" />
       <workItem from="1670652343313" duration="4261000" />
       <workItem from="1670837855127" duration="10000" />
-      <workItem from="1671159735094" duration="3058000" />
+      <workItem from="1671159735094" duration="4372000" />
+      <workItem from="1671301395705" duration="1201000" />
+      <workItem from="1671437452510" duration="2221000" />
+      <workItem from="1671525575854" duration="1000" />
+      <workItem from="1671654718267" duration="1578000" />
+      <workItem from="1671707565915" duration="4000" />
+      <workItem from="1671767755986" duration="294000" />
+      <workItem from="1671768062315" duration="1849000" />
     </task>
     <servers />
   </component>
@@ -99,11 +128,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/section_two/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/section_2/Main.java</url>
           <line>20</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
