@@ -34,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading/src/section_3_thread_coordination/thread_join/exercise",
+    "last_opened_file_path": "/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,10 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/src/section_3_thread_coordination/thread_join/exercise" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.section_3_thread_coordination.thread_join.Main">
+  <component name="RunManager" selected="Application.section_4_performance_optimization.latency.Main">
     <configuration name="ExampleOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_3_thread_coordination.thread_interrupt.ExampleOne" />
       <module name="mutithreading" />
@@ -96,8 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="section_4_performance_optimization.latency.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.latency.Main" />
+      <module name="mutithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="section_4_performance_optimization.latency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.section_4_performance_optimization.latency.Main" />
         <item itemvalue="Application.section_3_thread_coordination.thread_join.Main" />
         <item itemvalue="Application.ExampleTwo" />
         <item itemvalue="Application.ExampleOne" />
@@ -126,7 +141,8 @@
       <workItem from="1671707565915" duration="4000" />
       <workItem from="1671767755986" duration="294000" />
       <workItem from="1671768062315" duration="2022000" />
-      <workItem from="1671785347148" duration="8610000" />
+      <workItem from="1671785347148" duration="12036000" />
+      <workItem from="1672211598353" duration="11957000" />
     </task>
     <servers />
   </component>
