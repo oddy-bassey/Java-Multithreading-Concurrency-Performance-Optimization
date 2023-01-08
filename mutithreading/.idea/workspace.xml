@@ -152,7 +152,8 @@
       <workItem from="1672910359574" duration="2123000" />
       <workItem from="1673097791197" duration="198000" />
       <workItem from="1673098014168" duration="33000" />
-      <workItem from="1673098058978" duration="6028000" />
+      <workItem from="1673098058978" duration="6322000" />
+      <workItem from="1673151483550" duration="2871000" />
     </task>
     <servers />
   </component>
@@ -177,6 +178,15 @@
           <url>file://$PROJECT_DIR$/src/section_2_thread_fundamentals_and_creation/Main.java</url>
           <line>20</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/section_4_performance_optimization/throughput/ThroughputHttpServer.java</url>
+          <line>17</line>
+          <properties class="section_4_performance_optimization.throughput.ThroughputHttpServer" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
