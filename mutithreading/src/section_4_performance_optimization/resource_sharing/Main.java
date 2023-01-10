@@ -8,9 +8,9 @@ public class Main {
         DecrementingThread decrementingThread = new DecrementingThread(inventoryCounter);
 
         incrementingThread.start();
-        decrementingThread.start();
-
         incrementingThread.join();
+
+        decrementingThread.start();
         decrementingThread.join();
 
         System.out.println("Items available : "+inventoryCounter.getItems());
