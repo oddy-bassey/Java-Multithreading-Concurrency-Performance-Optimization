@@ -54,20 +54,7 @@
       <recent name="$PROJECT_DIR$/resources/throughput" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThroughputHttpServer">
-    <configuration name="ExampleTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_3_thread_coordination.thread_interrupt.ExampleTwo" />
-      <module name="mutithreading" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="section_3_thread_coordination.thread_interrupt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.section_4_performance_optimization.resource_sharing.Main">
     <configuration name="ImageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.latency.ImageProcessor" />
       <module name="mutithreading" />
@@ -114,13 +101,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="section_4_performance_optimization.resource_sharing.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.resource_sharing.Main" />
+      <module name="mutithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="section_4_performance_optimization.resource_sharing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.section_4_performance_optimization.resource_sharing.Main" />
         <item itemvalue="Application.ThroughputHttpServer" />
         <item itemvalue="Application.ImageProcessor" />
         <item itemvalue="Application.section_3_thread_coordination.thread_join.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ExampleTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +155,9 @@
       <workItem from="1673098058978" duration="6322000" />
       <workItem from="1673151483550" duration="6198000" />
       <workItem from="1673261656670" duration="16000" />
+      <workItem from="1673297546942" duration="103000" />
+      <workItem from="1673344884562" duration="4000" />
+      <workItem from="1673351037974" duration="1404000" />
     </task>
     <servers />
   </component>
