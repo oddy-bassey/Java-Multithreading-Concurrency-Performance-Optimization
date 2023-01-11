@@ -57,26 +57,13 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ImageProcessor">
+  <component name="RunManager" selected="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main">
     <configuration name="ImageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.latency.ImageProcessor" />
       <module name="mutithreading" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="section_4_performance_optimization.latency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_5_concurrency_challenges_and_solutions.critical_section_and_synchronization.Main" />
-      <module name="mutithreading" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="section_5_concurrency_challenges_and_solutions.critical_section_and_synchronization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +97,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="section_4_performance_optimization.resource_sharing.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.resource_sharing.Main" />
+    <configuration name="section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
       <module name="mutithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="section_4_performance_optimization.resource_sharing.*" />
+          <option name="PATTERN" value="section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sections_5_data_sharing_btw_threads.resource_sharing.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sections_5_data_sharing_btw_threads.resource_sharing.Main" />
+      <module name="mutithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sections_5_data_sharing_btw_threads.resource_sharing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,7 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.section_4_performance_optimization.resource_sharing.Main" />
+        <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
+        <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
         <item itemvalue="Application.ThroughputHttpServer" />
         <item itemvalue="Application.ImageProcessor" />
         <item itemvalue="Application.section_3_thread_coordination.thread_join.Main" />
@@ -167,6 +168,7 @@
       <workItem from="1673344884562" duration="4000" />
       <workItem from="1673351037974" duration="8505000" />
       <workItem from="1673435293952" duration="34000" />
+      <workItem from="1673474830917" duration="4090000" />
     </task>
     <servers />
   </component>
