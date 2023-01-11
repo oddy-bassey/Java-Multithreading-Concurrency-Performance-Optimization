@@ -1,4 +1,4 @@
-package section_4_performance_optimization.resource_sharing;
+package section_5_data_sharing_btw_threads.resource_sharing;
 
 public class Main {
 

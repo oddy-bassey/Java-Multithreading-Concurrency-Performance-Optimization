@@ -1,4 +1,4 @@
-package section_5_concurrency_challenges_and_solutions.critical_section_and_synchronization;
+package section_6_concurrency_challenges_and_solutions.critical_section_and_synchronization;
 
 public class Main {
 

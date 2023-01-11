@@ -57,7 +57,7 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity.Main">
+  <component name="RunManager" selected="Application.ImageProcessor">
     <configuration name="ImageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.latency.ImageProcessor" />
       <module name="mutithreading" />
@@ -125,7 +125,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity.Main" />
         <item itemvalue="Application.section_4_performance_optimization.resource_sharing.Main" />
         <item itemvalue="Application.ThroughputHttpServer" />
         <item itemvalue="Application.ImageProcessor" />
@@ -166,7 +165,8 @@
       <workItem from="1673261656670" duration="16000" />
       <workItem from="1673297546942" duration="103000" />
       <workItem from="1673344884562" duration="4000" />
-      <workItem from="1673351037974" duration="4888000" />
+      <workItem from="1673351037974" duration="8505000" />
+      <workItem from="1673435293952" duration="34000" />
     </task>
     <servers />
   </component>
