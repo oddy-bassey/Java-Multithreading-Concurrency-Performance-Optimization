@@ -20,11 +20,8 @@ public class MinMaxMetrics {
      */
     public synchronized void addSample(long newSample) {
         // Add code here
-        if (newSample < minimumPrice) {
-            minimumPrice = newSample;
-        } else if (newSample > maximumPrice) {
-            maximumPrice = newSample;
-        }
+        this.minimumPrice = Math.min(newSample, this.minimumPrice);
+        this.maximumPrice = Math.max(newSample, this.maximumPrice);
     }
 
     /**
