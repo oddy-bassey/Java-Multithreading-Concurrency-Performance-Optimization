@@ -1,7 +1,9 @@
 package section_5_data_sharing_btw_threads.resource_sharing;
 
 public class Main {
-
+    /*
+     * An example of a Race Condition
+     */
     public static void main(String[] args) throws InterruptedException {
         InventoryCounter inventoryCounter = new InventoryCounter();
         IncrementingThread incrementingThread = new IncrementingThread(inventoryCounter);

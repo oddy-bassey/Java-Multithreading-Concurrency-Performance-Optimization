@@ -19,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,7 +58,7 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ImageProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.latency.ImageProcessor" />
       <module name="mutithreading" />
@@ -71,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThroughputHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.throughput.ThroughputHttpServer" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_6_concurrency_challenges_and_solutions.race_conditions_and_data_races.Main" />
       <module name="mutithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="section_4_performance_optimization.throughput.*" />
+          <option name="PATTERN" value="section_6_concurrency_challenges_and_solutions.race_conditions_and_data_races.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="section_3_thread_coordination.thread_join.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_3_thread_coordination.thread_join.Main" />
+    <configuration name="ThroughputHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.throughput.ThroughputHttpServer" />
       <module name="mutithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="section_3_thread_coordination.thread_join.*" />
+          <option name="PATTERN" value="section_4_performance_optimization.throughput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
         <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
         <item itemvalue="Application.ThroughputHttpServer" />
         <item itemvalue="Application.ImageProcessor" />
-        <item itemvalue="Application.section_3_thread_coordination.thread_join.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,10 @@
       <workItem from="1673344884562" duration="4000" />
       <workItem from="1673351037974" duration="8505000" />
       <workItem from="1673435293952" duration="34000" />
-      <workItem from="1673474830917" duration="5966000" />
+      <workItem from="1673474830917" duration="6882000" />
+      <workItem from="1673518265745" duration="141000" />
+      <workItem from="1673770222688" duration="1131000" />
+      <workItem from="1673771363612" duration="2173000" />
     </task>
     <servers />
   </component>

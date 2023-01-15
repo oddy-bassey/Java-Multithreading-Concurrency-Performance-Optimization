@@ -3,6 +3,9 @@ package section_6_concurrency_challenges_and_solutions.atomic_operations_volatil
 import java.util.Random;
 
 public class Main {
+    /*
+     * An example of a Race Condition
+     */
 
     public static void main (String[] args) {
         Metrics metrics = new Metrics();
