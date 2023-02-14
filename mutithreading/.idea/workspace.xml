@@ -41,7 +41,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -58,7 +58,7 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.locking_strategies_and_deadlocks.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_6_concurrency_challenges_and_solutions.race_conditions_and_data_races.Main" />
       <module name="mutithreading" />
@@ -172,7 +172,13 @@
       <workItem from="1673474830917" duration="6882000" />
       <workItem from="1673518265745" duration="141000" />
       <workItem from="1673770222688" duration="1131000" />
-      <workItem from="1673771363612" duration="8767000" />
+      <workItem from="1673771363612" duration="10739000" />
+      <workItem from="1673871410860" duration="651000" />
+      <workItem from="1674318978964" duration="1019000" />
+      <workItem from="1674574268778" duration="241000" />
+      <workItem from="1675717721081" duration="2622000" />
+      <workItem from="1675823120969" duration="343000" />
+      <workItem from="1675976388358" duration="320000" />
     </task>
     <servers />
   </component>
