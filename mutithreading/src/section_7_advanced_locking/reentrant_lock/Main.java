@@ -1,26 +1,4 @@
-package section_7_advanced_locking.reentrant_lock;/*
- * MIT License
- *
- * Copyright (c) 2018 Michael Pogrebinsky
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
+package section_7_advanced_locking.reentrant_lock;
 
 import javafx.animation.AnimationTimer;
 import javafx.animation.FillTransition;
@@ -38,15 +16,14 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * ReentrantLock Part 2 - User Interface Application example
- * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
- * <p>
- * See README.md for instruction on how to run the application
  */
 public class Main extends Application {
     public static void main(String[] args) {
@@ -62,8 +39,8 @@ public class Main extends Application {
 
         addLabelsToGrid(cryptoLabels, grid);
 
-        double width = 300;
-        double height = 250;
+        double width = 500;
+        double height = 400;
 
         StackPane root = new StackPane();
 
@@ -74,40 +51,35 @@ public class Main extends Application {
 
         primaryStage.setScene(new Scene(root, width, height));
 
-        PricesContainer pricesContainer = new PricesContainer();
-
-        PriceUpdater priceUpdater = new PriceUpdater(pricesContainer);
+        PriceContainer priceContainer = new PriceContainer();
+        PriceUpdater priceUpdater = new PriceUpdater(priceContainer);
 
         AnimationTimer animationTimer = new AnimationTimer() {
             @Override
             public void handle(long now) {
-                if (pricesContainer.getLockObject().tryLock()) {
+                if (priceContainer.getLockObject().tryLock()) {
                     try {
                         Label bitcoinLabel = cryptoLabels.get("BTC");
-                        bitcoinLabel.setText(String.valueOf(pricesContainer.getBitcoinPrice()));
+                        bitcoinLabel.setText(String.valueOf(priceUpdater.priceContainer.getBitcoinPrice()));
 
                         Label etherLabel = cryptoLabels.get("ETH");
-                        etherLabel.setText(String.valueOf(pricesContainer.getEtherPrice()));
+                        etherLabel.setText(String.valueOf(priceUpdater.priceContainer.getEtherPrice()));
 
                         Label litecoinLabel = cryptoLabels.get("LTC");
-                        litecoinLabel.setText(String.valueOf(pricesContainer.getLitecoinPrice()));
+                        litecoinLabel.setText(String.valueOf(priceUpdater.priceContainer.getLitecoinPrice()));
 
                         Label bitcoinCashLabel = cryptoLabels.get("BCH");
-                        bitcoinCashLabel.setText(String.valueOf(pricesContainer.getBitcoinCashPrice()));
+                        bitcoinCashLabel.setText(String.valueOf(priceUpdater.priceContainer.getBitcoinCashPrice()));
 
                         Label rippleLabel = cryptoLabels.get("XRP");
-                        rippleLabel.setText(String.valueOf(pricesContainer.getRipplePrice()));
+                        rippleLabel.setText(String.valueOf(priceUpdater.priceContainer.getRipplePrice()));
                     } finally {
-                        pricesContainer.getLockObject().unlock();
+                        priceContainer.getLockObject().unlock();
                     }
                 }
             }
         };
-
-        addWindowResizeListener(primaryStage, background);
-
         animationTimer.start();
-
         priceUpdater.start();
 
         primaryStage.show();
@@ -186,7 +158,7 @@ public class Main extends Application {
         System.exit(0);
     }
 
-    public static class PricesContainer {
+    public static class PriceContainer {
         private Lock lockObject = new ReentrantLock();
 
         private double bitcoinPrice;
@@ -197,6 +169,10 @@ public class Main extends Application {
 
         public Lock getLockObject() {
             return lockObject;
+        }
+
+        public void setLockObject(Lock lockObject) {
+            this.lockObject = lockObject;
         }
 
         public double getBitcoinPrice() {
@@ -241,35 +217,37 @@ public class Main extends Application {
     }
 
     public static class PriceUpdater extends Thread {
-        private PricesContainer pricesContainer;
+        private PriceContainer priceContainer;
         private Random random = new Random();
 
-        public PriceUpdater(PricesContainer pricesContainer) {
-            this.pricesContainer = pricesContainer;
+        public PriceUpdater(PriceContainer priceContainer) {
+            this.priceContainer = priceContainer;
         }
 
         @Override
         public void run() {
             while (true) {
-                pricesContainer.getLockObject().lock();
+                priceContainer.getLockObject().lock();
 
                 try {
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
                     }
-                    pricesContainer.setBitcoinPrice(random.nextInt(20000));
-                    pricesContainer.setEtherPrice(random.nextInt(2000));
-                    pricesContainer.setLitecoinPrice(random.nextInt(500));
-                    pricesContainer.setBitcoinCashPrice(random.nextInt(5000));
-                    pricesContainer.setRipplePrice(random.nextDouble());
-                } finally {
-                    pricesContainer.getLockObject().unlock();
-                }
 
+                    priceContainer.setBitcoinPrice(random.nextInt(20000));
+                    priceContainer.setEtherPrice(random.nextInt(2000));
+                    priceContainer.setLitecoinPrice(random.nextInt(500));
+                    priceContainer.setBitcoinCashPrice(random.nextInt(5000));
+                    priceContainer.setRipplePrice(random.nextInt(20000));
+                } finally {
+                    priceContainer.getLockObject().unlock();
+                }
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
                 }
             }
         }

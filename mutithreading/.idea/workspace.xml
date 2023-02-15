@@ -32,21 +32,30 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/opt/javafx-sdk-19.0.2.1/lib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.22427832&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.27959698&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/section_7_advanced_locking/reentrant_lock" />
       <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/src/section_3_thread_coordination/thread_join/exercise" />
     </key>
@@ -58,7 +67,7 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.section_7_advanced_locking.reentrant_lock.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_6_concurrency_challenges_and_solutions.race_conditions_and_data_races.Main" />
       <module name="mutithreading" />
@@ -72,14 +81,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThroughputHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="section_4_performance_optimization.throughput.ThroughputHttpServer" />
+    <configuration default="true" type="Application" factoryName="Application">
       <module name="mutithreading" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="section_4_performance_optimization.throughput.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
+      <selectedOptions>
+        <option name="vmParameters" />
+      </selectedOptions>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,6 +121,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="section_7_advanced_locking.reentrant_lock.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_7_advanced_locking.reentrant_lock.Main" />
+      <module name="mutithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="section_7_advanced_locking.reentrant_lock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sections_5_data_sharing_btw_threads.resource_sharing.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sections_5_data_sharing_btw_threads.resource_sharing.Main" />
       <module name="mutithreading" />
@@ -120,17 +148,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.locking_strategies_and_deadlocks.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
+      <item itemvalue="Application.section_7_advanced_locking.reentrant_lock.Main" />
+      <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.locking_strategies_and_deadlocks.Main" />
+        <item itemvalue="Application.section_7_advanced_locking.reentrant_lock.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.locking_strategies_and_deadlocks.Main" />
         <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
         <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
-        <item itemvalue="Application.ThroughputHttpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +219,8 @@
       <workItem from="1675717721081" duration="2622000" />
       <workItem from="1675823120969" duration="343000" />
       <workItem from="1675976388358" duration="320000" />
+      <workItem from="1676412253936" duration="6023000" />
+      <workItem from="1676431018692" duration="1576000" />
     </task>
     <servers />
   </component>
