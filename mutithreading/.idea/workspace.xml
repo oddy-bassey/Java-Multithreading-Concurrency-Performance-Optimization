@@ -39,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/opt/javafx-sdk-19.0.2.1/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/revoltcode/Documents/Udemy Courses/Java-Multithreading-Concurrency-Performance-Optimization/mutithreading/src/section_7_advanced_locking/exercise&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -54,6 +54,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/section_7_advanced_locking/exercise" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/section_7_advanced_locking/reentrant_lock" />
       <recent name="$PROJECT_DIR$/resources" />
@@ -221,6 +222,8 @@
       <workItem from="1675976388358" duration="320000" />
       <workItem from="1676412253936" duration="6023000" />
       <workItem from="1676431018692" duration="2277000" />
+      <workItem from="1676565290364" duration="1675000" />
+      <workItem from="1676838112942" duration="11000" />
     </task>
     <servers />
   </component>
