@@ -1,7 +1,8 @@
 package section_7_advanced_locking.reentrant_readwrite_lock;
 
 import java.util.*;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Main {
     private static final int HIGHEST_PRICE = 1000;
@@ -58,10 +59,12 @@ public class Main {
 
     public static class InventoryDatabase {
         private TreeMap<Integer, Integer> priceToCountMap = new TreeMap<>();
-        private ReentrantLock lock = new ReentrantLock();
+        private ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+        private Lock readLock = reentrantReadWriteLock.readLock();
+        private Lock writeLock = reentrantReadWriteLock.writeLock();
 
         public int getNumberOfItemsInPriceRange (int lowerBound, int upperBound) {
-            lock.lock();
+            readLock.lock();
             try {
                 Integer fromKey = priceToCountMap.ceilingKey(lowerBound);
                 Integer toKey = priceToCountMap.floorKey(upperBound);
@@ -78,12 +81,12 @@ public class Main {
 
                 return sum;
             } finally {
-                lock.unlock();
+                readLock.unlock();
             }
         }
 
         public void addItem (int price) {
-            lock.lock();
+            writeLock.lock();
             try {
                 Integer numberOfItemsForPrice = priceToCountMap.get(price);
 
@@ -93,12 +96,12 @@ public class Main {
                     priceToCountMap.put(price, numberOfItemsForPrice + 1);
                 }
             } finally {
-                lock.unlock();
+                writeLock.unlock();
             }
         }
 
         public void removeItem (int price) {
-            lock.lock();
+            writeLock.lock();
             try {
                 Integer numberOfItemsForPrice = priceToCountMap.get(price);
 
@@ -108,7 +111,7 @@ public class Main {
                     priceToCountMap.put(price, numberOfItemsForPrice - 1);
                 }
             } finally {
-                lock.unlock();
+                writeLock.unlock();
             }
         }
     }
