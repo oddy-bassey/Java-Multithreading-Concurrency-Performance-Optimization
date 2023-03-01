@@ -68,7 +68,7 @@
       <recent name="section_5_concurrency_challenges_and_solutions.critical_section_and_atomicity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.section_7_advanced_locking.reentrant_lock.Main">
+  <component name="RunManager" selected="Application.section_7_advanced_locking.reentrant_readwrite_lock.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="section_6_concurrency_challenges_and_solutions.race_conditions_and_data_races.Main" />
       <module name="mutithreading" />
@@ -140,12 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sections_5_data_sharing_btw_threads.resource_sharing.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sections_5_data_sharing_btw_threads.resource_sharing.Main" />
+    <configuration name="section_7_advanced_locking.reentrant_readwrite_lock.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="section_7_advanced_locking.reentrant_readwrite_lock.Main" />
       <module name="mutithreading" />
+      <selectedOptions>
+        <option name="vmParameters" />
+      </selectedOptions>
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sections_5_data_sharing_btw_threads.resource_sharing.*" />
+          <option name="PATTERN" value="section_7_advanced_locking.reentrant_readwrite_lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,19 +162,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.section_7_advanced_locking.reentrant_readwrite_lock.Main" />
       <item itemvalue="Application.locking_strategies_and_deadlocks.Main" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
       <item itemvalue="Application.section_7_advanced_locking.reentrant_lock.Main" />
-      <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.section_7_advanced_locking.reentrant_readwrite_lock.Main" />
         <item itemvalue="Application.section_7_advanced_locking.reentrant_lock.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.locking_strategies_and_deadlocks.Main" />
         <item itemvalue="Application.section_6_concurrency_challenges_and_solutions.atomic_operations_volatile_and_metrics_example.Main" />
-        <item itemvalue="Application.sections_5_data_sharing_btw_threads.resource_sharing.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +227,9 @@
       <workItem from="1676431018692" duration="2277000" />
       <workItem from="1676565290364" duration="1675000" />
       <workItem from="1676838112942" duration="11000" />
-      <workItem from="1676932669036" duration="1312000" />
+      <workItem from="1676932669036" duration="1877000" />
+      <workItem from="1677064127353" duration="623000" />
+      <workItem from="1677658324891" duration="10600000" />
     </task>
     <servers />
   </component>
